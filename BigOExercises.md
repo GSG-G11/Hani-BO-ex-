@@ -42,7 +42,7 @@ Simplify the following big O expressions as much as possible:
 
 10. `O(n + n^(1/2) + n^2 + n * log(n)^10)`
 
-- => O(n log(n)^10)
+- => O(n^2)
 
 ### Part 2
 
@@ -113,4 +113,7 @@ function subtotals(array) {
 
 T = O(n);
 S = O(n * n);
+subtotal is reinitialized with every forloop => n
+subtotalArray is filled with subtotal values => n
+i guess the space complixity is n*n
 ```
